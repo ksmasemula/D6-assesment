@@ -1,0 +1,131 @@
+<div class="invoice-wrapper"
+  fxLayout="column" fxLayoutAlign="center center" >
+  <div class="invoice-container" fxLayout.gt-lg="column">
+    <header class="invoice-header"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+      >
+      <div>
+        <h2 class="company-name">Company Name</h2>
+        <ul style="padding-left: 7%;">
+          <li>[Street Address]</li>
+          <li>[City, ST Zip]</li>
+          <li>Phone: [000-000-0000]</li>
+          <li>Fax: [000-000-0000]</li>
+          <li>Website: somedomain.com</li>
+        </ul>
+      </div>
+      <div fxLayout="column" >
+        <h2 class="invoice-title">INVOICE</h2>
+        <div fxLayout="row" fxFlexAlign="end none">
+          <ul style="text-align: right;">
+            <li>DATE</li>
+            <li>INVOICE #</li>
+            <li>CUSTOMER ID</li>
+            <li>DUE DATE </li>
+          </ul>
+          <ul style="text-align: right;">
+            <li>12/9/2019</li>
+            <li>[123456]</li>
+            <li>[123]</li>
+            <li>1/8/2020</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="bill-address" fxLayout="row"
+      fxLayoutAlign="start" >
+      <div >
+        <h3>BILL TO</h3>
+          <ul>
+            <li>[Name]</li>
+            <li>[Company Name]</li>
+            <li>[Street Address]</li>
+            <li>[Street Address]</li>
+            <li>[Phone]</li>
+          </ul>
+      </div>
+    </div>
+    <div class="invoice-main">
+      <div class="invoice-main-table">
+        <table mat-table
+          aria-labelledby="Invoice main content">
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> Description</th>
+            <td mat-cell *matCellDef="let element">
+              [Service Fee]
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>TAXED</th>
+            <td mat-cell *matCellDef="let element">
+
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>AMOUNT</th>
+            <td mat-cell *matCellDef="let element">
+
+            </td>
+          </ng-container>
+        </table>
+      </div>
+    </div>
+    <footer class="invoice-footer" >
+      <div fxLayout.gt-lg="row" fxLayoutAlign="space-between" >
+        <div class="invoice-comments" fxFlex="50"
+
+          >
+          <h4>OTHER COMMENTS</h4>
+          <p style="padding: 3%;">
+            1. Total payment due in 30 days
+            2. Please include the invoice number on your check
+          </p>
+        </div>
+        <div class="invoice-main-totals">
+          <div class="footer-main" fxLayout="row">
+            <ul>
+              <li>Subtotal</li>
+              <li>Taxable</li>
+              <li>Tax rate</li>
+              <li>Tax due</li>
+              <li>Other</li>
+              <li>TOTAL</li>
+            </ul>
+            <ul>
+              <li>[Subtotal]</li>
+              <li>[Taxable]</li>
+              <li>[Tax rate]</li>
+              <li>[Tax due]</li>
+              <li>[Other]</li>
+              <li>[TOTAL]</li>
+            </ul>
+          </div>
+          <div style="text-align: center;">
+            <p>
+              Make all checks payable to
+            </p>
+            <p>
+              [Your Company Name]
+            </p>
+          </div>
+        </div>
+     </div>
+     <div class="contact-message"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        >
+        <p>
+          If you have any questions about this invoice, please contact
+        </p>
+        <p>
+          [Name, Phone #, Email]
+        </p>
+        <p>
+          <strong> Thank Your For Your Business!</strong>
+        </p>
+     </div>
+
+    </footer>
+   </div>
+</div>

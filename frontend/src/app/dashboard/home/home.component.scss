@@ -1,0 +1,36 @@
+
+.invoice-wrapper{
+  padding: 5%;
+}
+
+.invoice-container{
+  border: solid black;
+  // background-color: aliceblue;
+  padding: 5%;
+}
+
+h3,h4{
+  background-color: rgb(59 78 135);
+  color: #fff;
+  padding: 1%;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.invoice-comments
+{
+  padding-top: 5%;
+}
+
+.invoice-title{
+  color: #7a8dc5;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.company-name{
+  color: #36527e;
+}
